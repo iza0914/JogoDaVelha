@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo da Velha inspirado no mundo mágico da Tinker Bell.">
+    <title>Jogo da Velha - Tinker Bell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="poster">
+            <img src="./image/fadacasa--.png" alt="Fada Casa">
+        </section>
+        <section class="conteudo">
+            <h1>Jogo da Velha</h1>
+            <p class="subtitulo">
+                ✨ Entre no mundo mágico das fadas ✨
+            </p>
+            <div class="info">
+                🧚 Você: X | IA: O
+            </div>
+            <div class="tabuleiro" id="tabuleiro">
+
+                <button class="casa" data-index="0" aria-label="Casa 1"></button>
+                <button class="casa" data-index="1" aria-label="Casa 2"></button>
+                <button class="casa" data-index="2" aria-label="Casa 3"></button>
+
+                <button class="casa" data-index="3" aria-label="Casa 4"></button>
+                <button class="casa" data-index="4" aria-label="Casa 5"></button>
+                <button class="casa" data-index="5" aria-label="Casa 6"></button>
+
+                <button class="casa" data-index="6" aria-label="Casa 7"></button>
+                <button class="casa" data-index="7" aria-label="Casa 8"></button>
+                <button class="casa" data-index="8" aria-label="Casa 9"></button>
+
+            </div>
+            <p class="status" id="status" aria-live="polite">
+                🌟 Sua vez de jogar!
+            </p>
+            <button class="reiniciar" onclick="reiniciarJogo()">
+                ✨ Nova partida
+            </button>
+            <p class="legenda">
+                Um pouco de magia em cada jogada 🧚
+            </p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
